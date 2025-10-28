@@ -1,0 +1,15 @@
+python -m venv venv
+./venv/Scripts/activate
+pip install pyinstaller
+pip install pytest==7.4.4
+pyinstaller --onefile main.py
+
+# Config file support
+pip install pyyaml==6.0.1
+
+# Install scheduler
+# Now for POC I will install directly from whl file
+# Later when we package it in some build pipeline we can pull from feed 
+# Or We can move scheduler here in the same repo and package it with final binary + keep publishing to feed as well for external use
+(Scheduler pytest version conflicts with 7.4.4, we need a fix there)
+pip install .\scheduler-0.1.2-py3-none-any.whl

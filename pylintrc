@@ -1,0 +1,37 @@
+[MASTER]
+reports=no
+
+[MESSAGES CONTROL]
+# For all codes, run 'pylint --list-msgs'
+disable=
+    broad-except,
+    cyclic-import,
+    duplicate-code,
+    fixme,
+    import-outside-toplevel,
+    invalid-name,
+    locally-disabled,
+    logging-fstring-interpolation,
+    logging-not-lazy,
+    missing-docstring,
+    redefined-outer-name,
+    too-few-public-methods,
+    too-many-arguments,
+    E0401,
+    C0413
+
+[FORMAT]
+max-line-length=80
+
+[VARIABLES]
+# Tells whether we should check for unused import in __init__ files.
+init-import=yes
+
+[DESIGN]
+# Maximum number of locals for function / method body
+max-locals=25
+# Maximum number of branch for function / method body
+max-branches=20
+
+[SIMILARITIES]
+min-similarity-lines=10
