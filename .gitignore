@@ -8,3 +8,4 @@ build/
 dist/
 .validate_log/
 .spec
+.pytest_cache/
