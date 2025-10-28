@@ -1,4 +1,3 @@
-import pytest
 import sys
 import yaml
 import os
